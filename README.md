@@ -232,6 +232,9 @@ lda_model <- LDA(text_dtm, k = 25, method = "Gibbs",
 
 Warning: this may take a few minutes depending on the size of your dataset.
 
+**To adjust the number of topics, change the number that k equals.**
+**For example, to run 50 topics, adjust to k = 50 ** 
+
 Now, we build the data that supports the website. 
 
 ```{r}
@@ -245,6 +248,8 @@ you choose to create the output).
 
 Finally, we now commit the new data files you just built to the GitHub fork
 you have. Drag and drop the data files into the "data" directory on GitHub.
+
+Your site is: https://YOURUSERNAME.github.io/dh-topic-models/
 
 If your page is published, you should see the new topic models! Note that you
 may need to open an incognito mode to refresh the JSON files.
